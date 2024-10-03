@@ -1123,9 +1123,9 @@ def main(page: ft.Page):
 
         resultados_list_view = ft.ListView(
             controls=resultados_column,
-            spacing=10,
+            spacing=1,
             auto_scroll=True,
-            height=600,
+            height=700,
             )
 
         # Contenedor para centrar el ListView
@@ -1133,7 +1133,7 @@ def main(page: ft.Page):
             content=resultados_list_view,
             alignment=ft.alignment.center,          # Alinea el contenido en el centro
             width=None,                             # Ancho del contenedor, ajústalo según sea necesario
-            padding=ft.padding.all(10)              # Padding alrededor del ListView
+            padding=ft.padding.all(1)              # Padding alrededor del ListView
         )
 
         # Contenedor principal para centrar todo
@@ -1141,7 +1141,7 @@ def main(page: ft.Page):
             content=centrado_container,
             alignment=ft.alignment.center,          # Alinea el contenido en el centro
             width=None,                             # Ajusta el ancho según tu diseño
-            padding=ft.padding.all(10)              # Padding alrededor del contenedor principal
+            padding=ft.padding.all(1)              # Padding alrededor del contenedor principal
         )
         progress_ring.visible=False
         Sustancia_Caliente_Seleccionada = ""
