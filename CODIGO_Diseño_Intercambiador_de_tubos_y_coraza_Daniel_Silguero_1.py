@@ -439,7 +439,7 @@ def main(page: ft.Page):
 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.24879
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
         if Sustancia_Fria_Seleccionada == "Agua":
             R_F= 0.001
@@ -460,7 +460,7 @@ def main(page: ft.Page):
 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.24879
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
                 #Datos del problema base:
 
@@ -478,7 +478,7 @@ def main(page: ft.Page):
                 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.2487
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
         if Sustancia_Fria_Seleccionada == "Etilenglicol":
             R_F= 0.001
@@ -492,7 +492,7 @@ def main(page: ft.Page):
                 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.2487      
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
         if Sustancia_Fria_Seleccionada == "Acido acético 5%":
             R_F= 0.001
@@ -513,7 +513,7 @@ def main(page: ft.Page):
 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.2487
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
         if Sustancia_Fria_Seleccionada == "Acido nitrico 70%":
             R_F= 0.001
@@ -534,7 +534,7 @@ def main(page: ft.Page):
 
             Pr_F=(Visc_F*Cp_F)/(Condc_F)
             s_F= Dens_F/62.2487
-            m_F= (m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F))
+            m_F= abs((m_C*Cp_C*(T_entr_C-T_sal_C))/(Cp_F*(T_sal_F-T_entr_F)))
 
         #-------------------------------------------------------------------------------------------------------------------------------------------------
         #-------------------------------------------------------------------------------------------------------------------------------------------------
