@@ -1141,7 +1141,7 @@ def main(page: ft.Page):
             content=centrado_container,
             alignment=ft.alignment.center,          # Alinea el contenido en el centro
             width=None,                             # Ajusta el ancho según tu diseño
-            padding=ft.padding.all(20)              # Padding alrededor del contenedor principal
+            padding=ft.padding.all(10)              # Padding alrededor del contenedor principal
         )
         progress_ring.visible=False
         Sustancia_Caliente_Seleccionada = ""
