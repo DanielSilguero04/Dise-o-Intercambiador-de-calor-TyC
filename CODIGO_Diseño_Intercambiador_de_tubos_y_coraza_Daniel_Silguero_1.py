@@ -357,7 +357,7 @@ def main(page: ft.Page):
 
             #Función Propiedades: Estado Liquido:
             if T_prom_C <= 350:
-                Dens_C= (-8*(10**(-6))*(T_prom_C**2))(-0.0242*T_prom_C)+52.284                                  #Unidades: lb/ft3
+                Dens_C= (-8*(10**(-6))*(T_prom_C**2))-(0.0242*T_prom_C)+52.284                                  #Unidades: lb/ft3
                 Cp_C= (0.0006*T_prom_C)+0.3934                                      #Unidades: lb/h*ft
                 Visc_C= (5*(10**(-5))*(T_prom_C**2))-(0.0304*T_prom_C)+5.3733       #Unidades: Btu/h*°F
                 Condc_C= (-4*(10**(-5))*T_prom_C)+0.0707                            #Unidades: Btu/lb*°F
