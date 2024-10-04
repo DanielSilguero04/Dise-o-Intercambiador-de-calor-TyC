@@ -1158,6 +1158,12 @@ def main(page: ft.Page):
         text="¡Iniciar!",
         on_click=cambiar_interfaz_1  # Dirigir a otra pantalla
     )
+
+    Derechos_autor = ft.Text(
+        "By Daniel Silguero Iregui",
+        size=12,
+        weight=ft.FontWeight.NORMAL
+    )
             
             # Añadimos los elementos a la pantalla
     page.add(
@@ -1167,7 +1173,12 @@ def main(page: ft.Page):
                 continue_button,
             ],
             alignment=ft.MainAxisAlignment.CENTER,  # Centra los elementos en la pantalla
-        )
+        ),
+        ft.Container(
+                content=Derechos_autor,
+                alignment=ft.alignment.bottom_right,  # Posiciona el texto en la esquina inferior derecha
+                padding=ft.Padding(0, 0, 10, 10),  # Agrega un poco de espacio desde el borde
+            ),
     )
 
 # Ejecutar la app en un entorno de escritorio o navegador automáticamente
